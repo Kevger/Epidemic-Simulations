@@ -4,6 +4,9 @@
 ## About
 Epidemics can be modelled mathematically in order to make forecasts and, if necessary, take countermeasures in time. First and foremost is the mathematical model developed in 1927 by William Ogilvy Kermack & Anderson Gray McKendrick, which divides the population into three groups: susceptible (S), infected (I) and recovered (R) and also models the interactions between them. According to Robert J. Shiller, successful narratives run like epidemics and also possess characteristics of pathogens such as the risk of infection, incubation period or recovery rate. The simulations presented here can be used to model both narratives and biological epidemics.
 
+![Alt text](Screenshot_1.png?raw=true "Screenshot of the epidemic simulations")
+
+
 ## Algorithms
 ### Susceptible - Infected (SI)
 In this model, the simplest of those presented here, two groups are modelled - susceptible (S) and infected (I). Once infected, a person remains permanently infected, infectious and can infect other people, inevitably infecting the entire population. The infection rate <b>β</b> alone determines the speed of spread. <b>I₀</b> is the percentage of the initial population which is infected.
