@@ -19,9 +19,7 @@
             recovered (R) can represent dead as well as living immune persons,
             this extension effectively adds nothing to the SIR model except for
             the information about deceased
-            <b>
-              I₀
-            </b>
+            <b>I₀</b>
             is the initial percentage of the initial population infected.
           </v-card-text>
         </v-card>
@@ -34,7 +32,7 @@
               thumb-label
               v-model="b"
               min="0.0"
-              max="1"
+              max="4"
               step="0.01"
               label="β"
             ></v-slider>
@@ -50,9 +48,9 @@
               thumb-label
               v-model="m"
               min="0.0"
-              max="1"
+              max="1.0"
               step="0.01"
-              label="µ"
+              label="μ"
             ></v-slider>
             <v-slider
               thumb-label

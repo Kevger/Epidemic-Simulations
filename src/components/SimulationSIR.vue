@@ -29,7 +29,7 @@
               thumb-label
               v-model="b"
               min="0.0"
-              max="1"
+              max="4"
               step="0.01"
               label="β"
             ></v-slider>
@@ -45,8 +45,8 @@
               thumb-label
               v-model="m"
               min="0.0"
-              max="0.5"
-              step="0.005"
+              max="0.10"
+              step="0.0005"
               label="μ"
             ></v-slider>
             <v-slider
@@ -91,7 +91,7 @@ export default {
   data: () => {
     return {
       b: 0.3,
-      m: 0,
+      m: 0.0005,
       y: 0.15,
       io: 0.01,
       time: 200,

@@ -22,7 +22,7 @@
               thumb-label
               v-model="b"
               min="0.0"
-              max="3"
+              max="4"
               step="0.01"
               label="β"
             ></v-slider>

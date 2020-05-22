@@ -54,19 +54,19 @@
             ></v-slider>
             <v-slider
               thumb-label
+              v-model="m"
+              min="0.0"
+              max="0.10"
+              step="0.0005"
+              label="μ"
+            ></v-slider>
+            <v-slider
+              thumb-label
               v-model="d"
               min="0.0"
               max="1"
               step="0.01"
               label="δ"
-            ></v-slider>
-            <v-slider
-              thumb-label
-              v-model="m"
-              min="0.0"
-              max="0.5"
-              step="0.005"
-              label="μ"
             ></v-slider>
             <v-slider
               thumb-label
@@ -110,7 +110,7 @@ export default {
       b: 0.3,
       y: 0.15,
       io: 0.1,
-      m: 0.01,
+      m: 0.0005,
       d: 0.3,
       time: 200,
       step: 0.5
