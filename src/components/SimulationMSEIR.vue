@@ -144,7 +144,7 @@ export default {
         dydt[1] = this.d * y[0] - this.b * y[1] * y[3] - this.m * y[1];
         dydt[2] = this.b * y[1] * y[3] - (this.a + this.m) * y[2];
         dydt[3] = this.a * y[2] - (this.m + this.y) * y[3];
-        dydt[4] = this.a * y[3] - this.m * y[4];
+        dydt[4] = this.y * y[3] - this.m * y[4];
       };
 
       return simulation(data, mseir, this.time, this.step);
