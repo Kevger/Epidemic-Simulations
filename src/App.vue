@@ -8,32 +8,8 @@
     <v-content>
       <v-container>
         <v-row>
-          <v-col cols="12">
-            <Explanation></Explanation>
-          </v-col>
-          <v-col cols="12">
-            <SimulationSI></SimulationSI>
-          </v-col>
-          <v-col cols="12">
-            <SimulationSIR></SimulationSIR>
-          </v-col>
-          <v-col cols="12">
-            <SimulationSIS></SimulationSIS>
-          </v-col>
-          <v-col cols="12">
-            <SimulationSIRD></SimulationSIRD>
-          </v-col>
-          <v-col cols="12">
-            <SimulationSEIR></SimulationSEIR>
-          </v-col>
-          <v-col cols="12">
-            <SimulationSEIS></SimulationSEIS>
-          </v-col>
-          <v-col cols="12">
-            <SimulationMSIR></SimulationMSIR>
-          </v-col>
-          <v-col cols="12">
-            <SimulationMSEIR></SimulationMSEIR>
+          <v-col v-for="component in allComponents" :key="component" cols="12">
+            <component :is="component" />
           </v-col>
         </v-row>
       </v-container>
@@ -60,6 +36,21 @@ import SimulationMSIR from "./components/SimulationMSIR.vue";
 import SimulationMSEIR from "./components/SimulationMSEIR.vue";
 
 export default {
+  data() {
+    return {
+      allComponents: [
+        "Explanation",
+        "SimulationSI",
+        "SimulationSIR",
+        "SimulationSIS",
+        "SimulationSIRD",
+        "SimulationSEIR",
+        "SimulationSEIS",
+        "SimulationMSIR",
+        "SimulationMSEIR"
+      ]
+    };
+  },
   name: "App",
   components: {
     Explanation,
