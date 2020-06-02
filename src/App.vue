@@ -15,6 +15,27 @@
       </v-container>
     </v-content>
 
+    <v-menu transition="slide-x-transition">
+      <template v-slot:activator="{ on }">
+        <v-btn fab fixed right bottom v-on="on">?</v-btn>
+      </template>
+      <v-card raised="true" max-width="220">
+        <v-container>
+          <v-row dense>
+            <v-col cols="12"> <strong>β</strong> = rate of infection </v-col>
+            <v-col cols="12"> <strong>γ</strong> = recovery rate </v-col>
+            <v-col cols="12"> <strong>μ</strong> = population dynamics </v-col>
+            <v-col cols="12">
+              <strong>δ</strong> = rate passive immunity
+            </v-col>
+            <v-col cols="12"> <strong>a</strong> = incubation rate </v-col>
+            <v-col cols="12"> <strong>I₀</strong> = initial infected </v-col>
+            <v-col cols="12"> <strong>time</strong> = sim. duration </v-col>
+          </v-row>
+        </v-container>
+      </v-card>
+    </v-menu>
+
     <v-footer>
       <v-col class="text-center" cols="12">
         {{ new Date().getFullYear() }} —
